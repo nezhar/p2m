@@ -5,6 +5,18 @@ converts it to Markdown using the [Turndown](https://github.com/mixmark-io/turnd
 
 ## Usage
 
+You can access the web application at [https://nezhar.github.io/p2m/](https://nezhar.github.io/p2m/).
+
+Alternatively, you can run the application locally using a http server. For example, you can use the Python http server:
+
+```sh
+python3 -m http.server 8080
+```
+
+Then, open a web browser and navigate to `http://localhost:8080`.
+
+### Usage with docker
+
 1. **Build the Docker Image**:
    ```sh
    docker build -t p2m .
@@ -12,7 +24,7 @@ converts it to Markdown using the [Turndown](https://github.com/mixmark-io/turnd
 
 2. **Run the Docker Container**:
    ```sh
-    docker run -d -p 8080:8080 p2m
+    docker run -p 8080:80 p2m
     ```
 
 3. **Access the Web Application**:
